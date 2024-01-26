@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekMon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+
+        <div class="ofertas">
+            <P> Ofertas por inicio de año</P>
+        </div>
+        <section class="encabezado">
+            <div><a href="../index.html"><img src="../imagenes/logos/GeekMon.PNG" alt="" class="Geekmon-logo"></div></a>
+            <div>
+                <form action="">
+                    <label for="txtBuscar"> </label>
+                    <input type="text" id="txt-buscar" name="txtBuscar" placeholder="Buscar Productos...">
+                </form>
+            </div>
+            <div>
+                <a href="../pages/sesion.html"> <img src="../imagenes/logos/user.png" alt="Inicia Sesión"
+                        class="user"></a>
+                <a href="../pages/carrito.html"> <img src="../imagenes/logos/car.png" alt="Ir al Carrito"
+                        class="car"></a>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- Banner de la página -->
+    <section id="banner">
+        <nav class="menu-banner">
+            <ul>
+                <li> <a href="../index.html">HOME</a></li>
+                <li> <a href="../pages/ofertas.html">OFERTAS</a></li>
+                <li> <a href="../pages/lo-nuevo.html">LO NUEVO</a></li>
+                <li> <a href="../pages/ayuda.html">AYUDA</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <!-- Cuerpo de la página -->
+    <main id="sesion">
+        <form action="#">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div>
+            <form action="">
+                <label for="txtRegistro"> Sé el primero en enterarte de todas las novedades</label>
+                <input type="text" id="txt-registro" name="txtRegistro" placeholder="ejemplo@correo.com">
+                <button> Suscribirme</button>
+            </form>
+        </div>
+
+        <div>
+            <a href=""><img src="../imagenes/logos/share-facebook.png" alt="Escríbenos en Facebook"></a>
+            <a href=""><img src="../imagenes/logos/share-messenger.png" alt="Escríbenos en Mesenger"></a>
+            <a href=""><img src="../imagenes/logos/WhatsApp_icon.png.webp" alt="Escríbenos en Whatsapp"></a>
+        </div>
+
+        <p>&copy; 2024 Geekmon. Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+
+</html>
