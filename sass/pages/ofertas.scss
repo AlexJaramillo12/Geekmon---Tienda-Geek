@@ -44,7 +44,7 @@
     }
   }
 
-  @media only screen and (max-width: 800px) {    
+  @media only screen and (min-width: 320px) and (max-width: 800px) {    
 
     .fila {
       flex-direction: column;
