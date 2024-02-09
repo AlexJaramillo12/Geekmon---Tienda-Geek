@@ -8,11 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    
 </head>
 
 <body>
@@ -54,59 +50,52 @@
     </section>
 
     <!-- Cuerpo de la página -->
-
-    <main id="gal-bs" class="container">
-
-        <div>
-            <p>Fabricamos Cuadro decorativos en MDF para el hogar de 20 x 28 cm o medidas personalizadas.
-                Ideal para decorar con fotos, frases, mensajes, poesías, dibujos, etc.
-                Es un regalo ideal para cualquier ocasión.                
-                Escribe en el cuadro y enviarlo por correo electrónico
-                via WhatsApp.</p>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf1.png" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf2.png" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf3.png" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf4.png" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf5.jpg" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf6.jpg" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf7.jpg" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf8.jpg" alt="Muestra de MDF"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"><img src="../imagenes/productos/opcionmdf9.jpg" alt="Muestra de MDF"></div>
-            
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-   
-
-
-
-
-
-
-
-
+    <main id="person">
+        <h2>Formulario de Pedido</h2>
+        <form action="#">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+            </div>
+            <div>
+                <label for="tel">Número de Celular:</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{10}">
+                
+            </div>
+            <div>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+            </div>
+            <h3>Seleccione el Producto:</h3>
+            <div>
+                <label>
+                    <input type="radio" name="producto" value="Camisa">
+                    Camisa
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="producto" value="Taza">
+                    Taza
+                </label>
+            </div>
+            <h3>Subir Imagen:</h3>
+            <div>
+                <input type="file" id="imagen" name="imagen">
+            </div>
+            <button>Enviar Pedido</button>
+        </form>
+        
 
 
     </main>
+
+
+
 
 
     <!-- Pie de página -->
