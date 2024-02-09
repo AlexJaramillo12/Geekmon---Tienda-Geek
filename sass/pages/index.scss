@@ -16,7 +16,7 @@ header {
 
 // Encabezado y Banner
 .encabezado {
-    background-color: $blanco;
+    background-color: $gris;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -155,3 +155,35 @@ footer {
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    
+    header,
+    footer img,
+    footer div {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    #productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        width: calc(100% - 40px);
+        max-width: 100%;        
+        margin: 0 auto;
+        margin-top: auto;
+    }
+}
