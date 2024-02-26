@@ -43,6 +43,11 @@ header {
         height: 20px;
         margin: 20px 0 0 5px;
         padding: 5px;
+
+        a{            
+                pointer-events: none;
+                cursor: default;
+        }
     }
 }
 
@@ -93,15 +98,18 @@ header {
     overflow: hidden;
     margin-top: 20px;
 
-    a, p {        
+    a {
         text-align: center;
         font-size: 1.5rem;
+        margin: 20px 0 10px 0;
+        text-decoration: none;
+        color: $azul-links;
 
         img {
-            width: 70%;
-            max-width: 100%;
+            width: 60%;
+            max-width: 80%;
             height: auto;
-            border: 1px solid #ddd;
+            border: 1px solid $blanco;
             border-radius: 8px;
             transition: transform 0.3s ease-in-out;
             /*PROPIEDAD PARA AFECTAR TRANSFORM */
@@ -119,9 +127,7 @@ header {
 footer {
     text-align: center;
     background-color: $blanco;
-    padding: 20px;
     bottom: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,9 +139,8 @@ footer {
         align-items: center;
 
         label {
-            margin-bottom: 5px;
+            margin: 10px 0 10px 0;
             font-size: 2rem;
-            margin-bottom: 10px;
         }
 
         input {
@@ -156,11 +161,17 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-    
+
     header,
+    section img,
     footer img,
     footer div {
         display: none;
+    }
+
+    .menu-banner {
+        position: fixed;
+
     }
 
     body {
@@ -169,20 +180,20 @@ footer {
         align-items: center;
     }
 
-    #banner img {
-        width: 100%;
-        height: auto;
-    }
 
     #productos {
         grid-template-columns: repeat(1, 1fr);
+
+        a:first-child {
+            margin-top: 50px;
+        }
     }
 
     footer {
         text-align: center;
         padding: 20px;
         width: calc(100% - 40px);
-        max-width: 100%;        
+        max-width: 100%;
         margin: 0 auto;
         margin-top: auto;
     }
